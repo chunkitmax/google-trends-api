@@ -290,7 +290,7 @@ export function getInterestResults(request) {
     .then((res) => {
       try {
         /** JSON.parse will decode unicode */
-        const results = JSON.stringify(JSON.parse(res.slice(5)));
+        const results = JSON.parse(res.slice(5));
 
         return results;
       } catch (e) {
